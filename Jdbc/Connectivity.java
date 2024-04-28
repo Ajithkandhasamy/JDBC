@@ -5,17 +5,18 @@ import java.sql.*;
 
 public class Connectivity {
 	public static void main (String[]args){
-		//method();
-		//insert();
-		//insertVarible();
-		//prparedStatement();
-		//delete();
+		method();
+		insert();
+		insertVarible();
+		prparedStatement();
+		delete();
 		update();
+		update1()
 	}	
   
-	     //retrive
+	                                                 //retrive
 	
-/*	private static void method() {
+	private static void method() {
 		
 		
 		try {
@@ -31,16 +32,13 @@ public class Connectivity {
 			System.out.println(e.toString());
 		}
 		
-	}      */
+	}      
 
-	           
+	
+	                                                  //insert
 	
 	
-	
-	             //insert
-	
-	
-/*	private static void insert() {
+	private static void insert() {
 		
 		
 		try {
@@ -56,13 +54,10 @@ public class Connectivity {
 		
 	}
 
-	}              */
+	            
 	
+	                                                //insert with  varible
 	
-	
-	
-	                //insert with  varible
-/*	
 private static void insertVarible() {
 		
 	String name="kasi";
@@ -85,21 +80,17 @@ private static void insertVarible() {
 		
 	}
 
-	}  
-	              */
+	
+	                                                   // prepared statement
 	
 	
-	     // prepared statement
-	
-	/*
 	private static void prparedStatement() {
 		
 		String name="kasi";
 		int no=5;	
 		String query="insert into connectivity values (?,?)";
 		
-			try {
-				
+                          try{
 				
 				//Class.forName("com.mysql.jdbc.Driver");
 				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","root");
@@ -115,16 +106,14 @@ private static void insertVarible() {
 			}
 			
 		}
-
-		}  */
 	
 	
-	              //delete
-	/*
+	                                                     //delete
+	
 private static void delete() {
 	
 	
-	int id_no=4;	 //deleted id
+	int id_no=4;	  //deleted id
 	String query="delete from connectivity where id="+id_no;
 	
 		try {
@@ -143,11 +132,10 @@ private static void delete() {
 		
 	}
 
-	}
-		*/
 	
-	            //update
-/*	
+	
+	                                                 //update
+	
 	private static void update() {
 		
 		
@@ -170,13 +158,9 @@ private static void delete() {
 			
 		}
 
-		}
-*/
 	
-	   // calling simple stored procedure
-	private static void update() {
-		
-		
+	                                                  // calling simple stored procedure
+	private static void update1() {
 		
 	
 		try {
